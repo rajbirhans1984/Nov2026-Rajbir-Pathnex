@@ -1,6 +1,6 @@
 # Day12 - training
 
-## Ansible Install Nginx on pathnex server
+## Ansible Install Nginx on codefly server
 
 - name: Install Nginx on AWS server
   hosts: all
@@ -15,3 +15,10 @@
   name: Nginx
   state: started
   enabled: yes
+
+## docker --version
+
+- docker run ubuntu echo "echo codefly consultancy"
+
+FROM ubuntu:20.04
+CMD ["echo", "hello codefly"]
